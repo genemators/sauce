@@ -46,7 +46,7 @@ const IndexPage = (props: any) => {
                       </a>
                       <div className="mt-3">
                         <a
-                            href={"https://genemator.me/" + content}
+                            href={"https://sauce.genemator.me/" + content}
                             className="read-post text-base leading-6 font-semibold transition ease-in-out duration-150"
                         >
                           Download
