@@ -7,7 +7,6 @@ import Head from "next/head";
 import Router from "next/router";
 import NProgress from "nprogress";
 import "../components/app.css";
-import "../components/markdown.css";
 import "../components/ngprogress.css";
 
 NProgress.configure({
