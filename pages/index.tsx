@@ -36,7 +36,7 @@ const IndexPage = (props: any) => {
               {props.dir.map((content: any) => {
                 return (
                     <div key={content}>
-                      <a href={"https://genemator.me/" + content} className="block">
+                      <a href={"https://sauce.genemator.me/" + content} className="block">
                         <h3 className="mt-2 text-xl leading-7 font-semibold text-white">
                           {content}
                         </h3>
