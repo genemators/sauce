@@ -37,7 +37,7 @@ const IndexPage = (props: any) => {
               return (
                 <div key={content}>
                   <a
-                    href={"https://sauce.genemator.me/" + content}
+                    href={"https://sauce.genemator.me/" + props!.focus + content}
                     className="block"
                   >
                     <h3 className="mt-2 text-xl leading-7 font-semibold text-white">
@@ -69,7 +69,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const focus = ctx.params!.path;
   const dir = await promises.readdir(`./public/${focus}`);
   return {
-    props: { dir }
+    props: { dir, focus }
   };
 };
 
