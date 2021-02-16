@@ -26,11 +26,10 @@ export default class GenoDocDocument extends Document {
           <meta name="theme-color" content="#000000" />
         </Head>
         <body>
-        <Main />
-        <NextScript />
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );
   }
 }
-

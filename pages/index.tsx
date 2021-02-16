@@ -67,7 +67,7 @@ const IndexPage = (props: any): React.ReactElement => {
 export const getStaticProps: GetStaticProps = async () => {
   const dir = await promises.readdir("./public");
   return {
-    props: { dir }
+    props: { dir },
   };
 };
 

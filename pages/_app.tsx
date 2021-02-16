@@ -10,7 +10,7 @@ import "../components/ngprogress.css";
 import "preact/debug";
 
 NProgress.configure({
-  showSpinner: false
+  showSpinner: false,
 });
 
 Router.events.on("routeChangeStart", () => NProgress.start());
@@ -38,4 +38,3 @@ export default class Documents extends App {
     );
   }
 }
-
