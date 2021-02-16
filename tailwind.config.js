@@ -10,20 +10,20 @@ module.exports = {
         "Consolas",
         '"Liberation Mono"',
         '"Courier New"',
-        "monospace"
-      ]
+        "monospace",
+      ],
     },
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans]
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
       width: {
-        72: "18rem"
-      }
-    }
+        72: "18rem",
+      },
+    },
   },
   variants: {
-    backgroundColor: ["responsive", "hover", "focus", "active"]
+    backgroundColor: ["responsive", "hover", "focus", "active"],
   },
   plugins: [require("@tailwindcss/ui"), require("tailwindcss-hyphens")],
   purge: {
@@ -31,7 +31,7 @@ module.exports = {
     content: [
       "./components/**/*.tsx",
       "./pages/**/*.tsx",
-      "./public/posts/*.json"
-    ]
-  }
+      "./public/posts/*.json",
+    ],
+  },
 };

@@ -1,5 +1,3 @@
 {
-  "proseWrap": "always",
-  "arrowParens": "always",
-  "trailingComma": "none"
+  "proseWrap": "always"
 }

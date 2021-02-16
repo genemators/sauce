@@ -7,17 +7,17 @@ module.exports = withPrefresh({
     redirects() {
       return [
         {
-          source: "/about.html",
-          destination: "/about",
-          permanent: true
+          source: "/manual.html",
+          destination: "/manual",
+          permanent: true,
         },
         {
-          source: "/posts.html",
-          destination: "/posts",
-          permanent: true
-        }
+          source: "/benchmarks.html",
+          destination: "/benchmarks",
+          permanent: true,
+        },
       ];
-    }
+    },
   },
   webpack(config, { dev, isServer }) {
     const splitChunks = config.optimization && config.optimization.splitChunks;
@@ -26,14 +26,14 @@ module.exports = withPrefresh({
       const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider)[\\/]/;
       if (cacheGroups.framework) {
         cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
-          test: preactModules
+          test: preactModules,
         });
         cacheGroups.commons.name = "framework";
       } else {
         cacheGroups.preact = {
           name: "commons",
           chunks: "all",
-          test: preactModules
+          test: preactModules,
         };
       }
     }
@@ -51,5 +51,5 @@ module.exports = withPrefresh({
     }
 
     return config;
-  }
+  },
 });

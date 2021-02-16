@@ -7,9 +7,8 @@ import Head from "next/head";
 import { GetStaticProps } from "next/types";
 
 import { promises } from "fs";
-import Link from "next/link";
 
-const IndexPage = (props: any) => {
+const IndexPage = (props: any): React.ReactElement => {
   return (
     <>
       <Head>
