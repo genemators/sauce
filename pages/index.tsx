@@ -38,7 +38,7 @@ const IndexPage = (props: Props): React.ReactElement => {
           <div className="mt-6 grid gap-16 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
             <div key={props.props.message}>
               <a
-                href={"https://sauce.genemator.me/" + props.props.message}
+                href={"https://sauce.genemator.uz/" + props.props.message}
                 className="block"
               >
                 <h3 className="mt-2 text-xl leading-7 font-semibold text-white">
@@ -50,7 +50,7 @@ const IndexPage = (props: Props): React.ReactElement => {
               </a>
               <div className="mt-3">
                 <a
-                  href={"https://sauce.genemator.me/" + props.props.message}
+                  href={"https://sauce.genemator.uz/" + props.props.message}
                   className="read-post text-base leading-6 font-semibold transition ease-in-out duration-150"
                 >
                   Download
